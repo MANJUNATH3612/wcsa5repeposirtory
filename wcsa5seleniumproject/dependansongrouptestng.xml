@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  <groups>
+		  <define name="reggrasion Testcae">
+			  <include name="functional tesccase"></include>
+			  <include name="smoke testcase"></include>
+			  <include name="integration testcase"></include>
+		  </define>
+		  <run>
+			  <include name="smoke testcase"></include>
+		  </run>
+	  </groups>
+    <classes>
+      <class name="annonationsandflags.dependsOnGroup_Flag7"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
